@@ -48,7 +48,26 @@ public class CalculatorTest {
 	@After
 	public void tearDown() throws Exception {
 	}
-
+	public final void testMultiply() {
+		int a = 5;
+		int b = 5;
+		
+		Calculator cal = new Calculator();
+		int actual = cal.multiple(a, b);
+		
+		int expected = 25;
+		assertEquals(actual, expected);
+	}
+	public final void testDivide() {
+		int a = 5;
+		int b = 5;
+		
+		Calculator cal = new Calculator();
+		int actual = cal.divide(a, b);
+		
+		int expected = 1;
+		assertEquals(actual, expected);
+	}
 	
 
 }
